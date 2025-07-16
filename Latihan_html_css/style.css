@@ -1,0 +1,82 @@
+/* Reset Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.profile-header img {
+    max-width: 200px;
+    border-radius: 50%;
+    border: 5px solid rgba(255,255,255,0.3);
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+section {
+    padding: 2rem;
+    margin: 1.5rem auto;
+    max-width: 800px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #2575fc;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #f0f2f5;
+}
+
+.hobbies ul {
+    list-style-type: none;
+    padding-left: 1rem;
+}
+
+.hobbies li {
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+.contact-info p {
+    margin: 0.7rem 0;
+    font-size: 1.1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #333;
+    color: white;
+}
+
+/* Responsif untuk mobile */
+@media (max-width: 600px) {
+    section {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+}
