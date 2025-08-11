@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Form Pendaftaran Anggota</title>
+
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Form Sederhana</h2>
+      <form id="simpleForm">
+        <label>Nama Lengkap:</label>
+        <input type="text" id="nama" placeholder="Masukkan nama" required />
+
+        <label for="jk">Jenis Kelamin</label>
+        <select name="jk" id="jk">
+          <option value="L">Laki-laki</option>
+          <option value="P">Perempuan</option>
+        </select>
+
+        <label for="kelas">Kelas</label>
+        <select name="kelas" id="kelas">
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select>
+
+        <button type="submit">Kirim</button>
+      </form>
+    </div>
+
+    <script>
+      document
+        .getElementById("simpleForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // biar nggak reload halaman
+          let name = document.getElementById("name").value;
+          alert("Terima kasih, " + name + "! Form kamu sudah terkirim.");
+        });
+    </script>
+  </body>
+</html>
