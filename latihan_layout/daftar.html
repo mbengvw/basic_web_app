@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Pendaftaran</title>
+
+    <style>
+      .form-container {
+        background-color: aqua;
+        width: 400px;
+        padding: 10px;
+      }
+
+      input,
+      select {
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 5px;
+        box-sizing: border-box;
+      }
+
+      button {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Formulir Pendaftaran</h1>
+      <form action="#">
+        <label for="nama">Nama Lengkap</label>
+        <input type="text" />
+        <label for="jk">Jenis Kelamin</label>
+        <select name="jk" id="jk">
+          <option value="L">Laki-laki</option>
+          <option value="P">Perempuan</option>
+        </select>
+        <label for="kelas">Kelas</label>
+        <select name="kelas" id="kelas">
+          <option value="10">Kelas 10</option>
+          <option value="11">Kelas 11</option>
+          <option value="12">Kelas 12</option>
+        </select>
+        <button type="submit">Simpan</button>
+      </form>
+    </div>
+  </body>
+</html>
